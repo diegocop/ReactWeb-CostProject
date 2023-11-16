@@ -97,7 +97,9 @@ function toggleProejctForm(){
                              <button className={styles.btn} onClick={toggleServiceForm}>{!showServiceForm ? 'Adicionar servi�o' : 'fechar'}</button>
                          </div>
                          <div className={styles.project_info}>
-                             {showServiceForm && <ServiceForm/>}
+                             {showServiceForm && (
+                              <ServiceForm/>
+                          )}
                          </div>
                          <h2>servi�os</h2>
                          <Container customClass="start">
